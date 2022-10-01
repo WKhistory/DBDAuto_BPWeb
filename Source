@@ -4,7 +4,7 @@ wait = 400
 Rem bpweb
 FindColorEx 279,203,1073,970,"32879E",0,0.9,intX,intY //黄
 If intX > 0 And intY > 0 Then 
-    MoveTo intX, intY
+    MoveTo intX+1, intY+1
     Delay 50
     LeftDown 1
     Delay buy
@@ -14,7 +14,7 @@ If intX > 0 And intY > 0 Then
 End If
 FindColorEx 279,203,1073,970,"256E2D",0,0.9,intX,intY //绿
 If intX > 0 And intY > 0 Then 
-    MoveTo intX, intY+1
+    MoveTo intX+1, intY+1
     Delay 50
     LeftDown 1
     Delay buy
@@ -24,7 +24,7 @@ If intX > 0 And intY > 0 Then
 End If
 FindColorEx 279,203,1073,970,"79326A",0,0.9,intX,intY //紫
 If intX > 0 And intY > 0 Then 
-    MoveTo intX, intY
+    MoveTo intX+1, intY+1
     Delay 50
     LeftDown 1
     Delay buy
@@ -34,7 +34,7 @@ If intX > 0 And intY > 0 Then
 End If
 FindColorEx 279,203,1073,970,"4015AB",0,0.9,intX,intY //红
 If intX > 0 And intY > 0 Then 
-    MoveTo intX, intY
+    MoveTo intX+1, intY+1
     Delay 50
     LeftDown 1
     Delay buy
@@ -45,7 +45,7 @@ End If
 FindColor 279, 203, 1073, 970, "253244",intX, intY//白
 FindColor 279,203,1073,970,"19212D",X,Y
 If intX > 0 And intY > 0 and X > 0 and Y > 0 Then 
-    MoveTo intX, intY
+    MoveTo intX+1, intY+1
     Delay 50
     LeftDown 1
     Delay buy
