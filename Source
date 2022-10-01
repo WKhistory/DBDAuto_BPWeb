@@ -2,17 +2,6 @@ Dim buy, wait
 buy = 600
 wait = 400
 Rem bpweb
-FindColor 279, 203, 1073, 970, "253244",intX, intY//白
-FindColor 279,203,1073,970,"19212D",X,Y
-If intX > 0 And intY > 0 and X > 0 and Y > 0 Then 
-    MoveTo intX, intY
-    Delay 50
-    LeftDown 1
-    Delay buy
-    LeftUp 1
-    Delay wait
-    Goto bpweb
-End If
 FindColorEx 279,203,1073,970,"32879E",0,0.9,intX,intY //黄
 If intX > 0 And intY > 0 Then 
     MoveTo intX, intY
@@ -45,6 +34,17 @@ If intX > 0 And intY > 0 Then
 End If
 FindColorEx 279,203,1073,970,"4015AB",0,0.9,intX,intY //红
 If intX > 0 And intY > 0 Then 
+    MoveTo intX, intY
+    Delay 50
+    LeftDown 1
+    Delay buy
+    LeftUp 1
+    Delay wait
+    Goto bpweb
+End If
+FindColor 279, 203, 1073, 970, "253244",intX, intY//白
+FindColor 279,203,1073,970,"19212D",X,Y
+If intX > 0 And intY > 0 and X > 0 and Y > 0 Then 
     MoveTo intX, intY
     Delay 50
     LeftDown 1
