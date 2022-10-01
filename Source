@@ -1,8 +1,18 @@
 Dim buy, wait
-buy = 600
-wait = 400
+buy = 600  //点击按住时间
+wait = 400 //等待恶灵吞噬时间
 Rem bpweb
-FindColorEx 279,203,1073,970,"32879E",0,0.9,intX,intY //黄
+FindColorEx 279,203,1073,970,"32879E",0,0.9,intX,intY //可点击黄色祭品
+If intX > 0 And intY > 0 Then 
+    MoveTo intX+1, intY+1  //鼠标移动误差校正
+    Delay 50
+    LeftDown 1
+    Delay buy
+    LeftUp 1
+    Delay wait
+    Goto bpweb
+End If
+FindColorEx 279,203,1073,970,"256E2D",0,0.9,intX,intY //可点击绿色祭品
 If intX > 0 And intY > 0 Then 
     MoveTo intX+1, intY+1
     Delay 50
@@ -12,7 +22,7 @@ If intX > 0 And intY > 0 Then
     Delay wait
     Goto bpweb
 End If
-FindColorEx 279,203,1073,970,"256E2D",0,0.9,intX,intY //绿
+FindColorEx 279,203,1073,970,"79326A",0,0.9,intX,intY //可点击紫色祭品
 If intX > 0 And intY > 0 Then 
     MoveTo intX+1, intY+1
     Delay 50
@@ -22,7 +32,7 @@ If intX > 0 And intY > 0 Then
     Delay wait
     Goto bpweb
 End If
-FindColorEx 279,203,1073,970,"79326A",0,0.9,intX,intY //紫
+FindColorEx 279,203,1073,970,"4015AB",0,0.9,intX,intY //可点击红色祭品
 If intX > 0 And intY > 0 Then 
     MoveTo intX+1, intY+1
     Delay 50
@@ -32,17 +42,7 @@ If intX > 0 And intY > 0 Then
     Delay wait
     Goto bpweb
 End If
-FindColorEx 279,203,1073,970,"4015AB",0,0.9,intX,intY //红
-If intX > 0 And intY > 0 Then 
-    MoveTo intX+1, intY+1
-    Delay 50
-    LeftDown 1
-    Delay buy
-    LeftUp 1
-    Delay wait
-    Goto bpweb
-End If
-FindColor 279, 203, 1073, 970, "253244",intX, intY//白
+FindColor 279, 203, 1073, 970, "253244",intX, intY //可点击白色祭品
 FindColor 279,203,1073,970,"19212D",X,Y
 If intX > 0 And intY > 0 and X > 0 and Y > 0 Then 
     MoveTo intX+1, intY+1
