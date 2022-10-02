@@ -1,15 +1,14 @@
-Dim buy, wait, a, b, color1, color2
+Dim buy, wait, i, color1, color2
 color1 = array("39495F", "344357", "384A62", "2F3E51") //白色祭品配件多种情况
-color2 = array("32879E", "256E2D","175213", "79326A", "4015AB") //黄、绿、红色祭品配件
+color2 = array("32879E", "256E2D", "175213", "79326A", "4015AB") //黄、绿、红色祭品配件
 buy = 455 //点击按住时间
 wait = 385 //间隔时间
-a = 0
-b = 0
+i = 0
 Rem bpweb
 MoveTo 300, 170//避免遮挡
-FindColorEx 279, 209, 1073, 970, color1(a), 2, 1.0, tsX, tsY //白色祭品配件寻找、点击
+FindColorEx 279, 209, 1073, 970, color1(i), 2, 1.0, tsX, tsY //白色祭品配件寻找、点击
 If tsX > 0 And tsY > 0 Then 
-	a = 0
+	i = 0
     MoveTo tsX+1, tsY+1 //坐标修正（未完全）
     Delay 50
     LeftDown 1
@@ -18,17 +17,17 @@ If tsX > 0 And tsY > 0 Then
     Delay wait
     Goto bpweb
     Else 
-    	a = a + 1
-    	If a > UBound(color1) Then //数组序数归零
-    		a = 0
+    	i = i + 1
+    	If i > UBound(color1) Then //数组序数归零
+    		i = 0
     		Goto other //跳出
     	End If
     	Goto bpweb
 End If
 Rem other
-FindColorEx 279, 209, 1073, 970, color2(b), 2, 0.9, tsX, tsY //其他祭品配件寻找、点击
+FindColorEx 279, 209, 1073, 970, color2(i), 2, 0.9, tsX, tsY //其他祭品配件寻找、点击
 If tsX > 0 And tsY > 0 Then 
-	b = 0
+	i = 0
     MoveTo tsX+1, tsY+1
     Delay 50
     LeftDown 1
@@ -37,9 +36,9 @@ If tsX > 0 And tsY > 0 Then
     Delay wait
     Goto bpweb
     Else 
-    	b = b + 1
-    	If b > UBound(color2) Then 
-    		b = 0
+    	i = i + 1
+    	If i > UBound(color2) Then 
+    		i = 0
     		Goto bpweb
     	End If
     	Goto other //品级提升寻找
