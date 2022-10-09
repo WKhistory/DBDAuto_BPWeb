@@ -1,4 +1,4 @@
-# DBDAuto_BPWeb/黎明杀机自动点血网工具  
+# DBDAuto_BPWeb/黎明杀机自动点血网工具1.8  
 Auto click  bloodweb.
 
 黎明杀机血网自动点击工具，使用按键精灵制作。  
