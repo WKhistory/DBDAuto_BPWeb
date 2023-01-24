@@ -1,5 +1,5 @@
 # DBDAuto_BPWeb/黎明杀机自动点血网工具
-Auto click  bloodweb.  
+***Auto click  bloodweb.***  
   
 黎明杀机血网自动点击工具，使用按键精灵制作。  
   
@@ -29,16 +29,16 @@ Auto click  bloodweb.
       
 - 理论上此工具可适配所有分辨率，如有问题可调整到`1920*1080`使用，缩放为`100％`   
   
-▤ ***血网背景具有透明度，背后的场景会对取色判断造成干扰。***  
+ ***血网背景具有透明度，背后的场景会对取色判断造成干扰。***  
   
-▤ ***干扰过大时使用技能/高配优先模式，影响较小。***   
+♦ ***干扰过大时使用技能/高配优先模式，影响较小。***   
   
-▤ ***普通模式不受干扰。***  
+♦ ***普通模式不受干扰。***  
     　　
 
 
     
-You can download the packaged program.  
+***You can download the packaged program.***  
 
 [下载地址/Download](https://github.com/WKhistory/DBDAuto_BPWeb/releases)  
 　　
