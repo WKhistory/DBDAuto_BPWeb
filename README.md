@@ -42,6 +42,6 @@
 [下载地址/Download](https://github.com/WKhistory/DBDAuto_BPWeb/releases)  
 　　
   
-> 你可能需要：[黎明杀机挂机脚本/DBD_AFK_TOOL](https://github.com/maskrs/DBD_AFK_TOOL/releases)　　
+
 　　
   
